@@ -4,13 +4,13 @@
 * Tipo: Notebook
 * Año adquisición: 2018
 * Procesador: 
-- Marca/Modelo: Intel Core i7-4790K
-/ Velocidad Base: 4.00 GHz
-\ Velocidad Máxima: 4.40 GHz
-! Numero de núcleos: 4
-| Humero de hilos: 2
+º Marca/Modelo: Intel Core i7-4790K
+º Velocidad Base: 4.00 GHz
+º Velocidad Máxima: 4.40 GHz
+º Numero de núcleos: 4
+º Humero de hilos: 2
 º Arquitectura: x86_64
-+ Set de instrucciones: Intel SSE4.1, Intel SSE4.2, Intel AVX2
+º Set de instrucciones: Intel SSE4.1, Intel SSE4.2, Intel AVX2
 
 Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz
 + Numero de nucleos: 4
