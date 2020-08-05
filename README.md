@@ -4,16 +4,18 @@
 * Tipo: Notebook
 * Año adquisición: 2018
 * Procesador: 
-  - Marca/Modelo: Intel Core i7-4790K
-  - Velocidad Base: 4.00 GHz
-  - Velocidad Máxima: 4.40 GHz
+  - Marca/Modelo: Intel(R) Core(TM) i7-6700HQ
+  - Velocidad Base: 2.60 GHz
+  - Velocidad Máxima: 3.50 GHz
   - Numero de núcleos: 4
-  - Humero de hilos: 2
-  - Arquitectura: x86_64
-  - Set de instrucciones: Intel SSE4.1, Intel SSE4.2, Intel AVX2
+  - Humero de hilos: 8
+  - Arquitectura: x64
+  - Set de instrucciones: Intel® SSE4.1, Intel® SSE4.2, Intel® AVX2
+* Tamaño de las cachés del procesador:
+  - L1D: 32KB 
+  - L1I: 32KB
+  - L2: 256KB
+  - L3: 6MB
 
-Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz
-+ Numero de nucleos: 4
-Humero de hilos: 8
 Memoria: 16 Gb DDR4 2133 MHz
 1 Disco duro 512 GB
