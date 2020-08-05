@@ -1,5 +1,7 @@
 # MCOC2020-P0
+
 # Mi computador principal
+
 * Marca/Modelo: Dell XPS 15 9550
 
 * Tipo: Notebook
@@ -39,11 +41,11 @@
   - Particiones: 3
   - Sistema de archivos: NTFS
 
-* Dirección MAC de la tarjeta wifi: 5C:E0:C5:D7:EE:48
+* Dirección MAC de la tarjeta wifi: 60:6D:C7:C6:4F:57
 
-* Dirección IP (Interna, del router): 192.168.0.129
+* Dirección IP (Interna, del router): 192.168.0.1
 
-* Dirección IP (Externa, del ISP): 190.45.122.34
+* Dirección IP (Externa, del ISP): 201.239.193.246
 
 * Proveedor internet: VTR Banda Ancha S.A.
 
