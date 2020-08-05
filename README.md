@@ -35,9 +35,9 @@
 * Disco 1:
   - Marca: Samsung
   - Tipo: SSD
-  - Tamaño: 1TB
-  - Particiones: 4
-  - Sistema de archivos: EXT4, swap
+  - Tamaño: 512GB
+  - Particiones: 3
+  - Sistema de archivos: NTFS
 
 * Dirección MAC de la tarjeta wifi: 5C:E0:C5:D7:EE:48
 
@@ -47,5 +47,3 @@
 
 * Proveedor internet: VTR Banda Ancha S.A.
 
-
-1 Disco duro 512 GB
