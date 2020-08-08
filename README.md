@@ -72,4 +72,4 @@ La versión numpy usada es 1.18.5.
 
 * Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida para confirmar. 
 Como se ve en el siguente gráfico se usan los 4 proceadores de mi computador.
-![CPUS](CPUS.png)
+![CPUS](CPUS.PNG)
