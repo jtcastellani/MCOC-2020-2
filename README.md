@@ -54,24 +54,24 @@
 # Desempeño MATMUL
 ![grafico](grafico.png)
 
-* ¿Como difiere del gráfico del profesor/ayudante? 
+* ¿Como difiere del gráfico del profesor/ayudante?  
 Para matrices entre 20x20 y 50x50 el computador del profesor requere menos tiempo, para matrices entre 50x50 y 2.000x2.000 es mi computador el que requiere menos tiempo.
 Para el gráfico de memoria usada, la línea puntada en el gráfico del profesor es a los 32 GB, en cambio en el mio es a los 16 GB, ya que es la memoria RAM instalada en cada uno de los compatudores.
 
-* ¿A qué se pueden deber las diferencias?
+* ¿A qué se pueden deber las diferencias?  
 Debe ser por las especificaciones de cada computador, diferencias en el procesador y cantidad de núcleos e hilos.
 
-* El gráfico de uso de memoria es lineal con el tamaño de matriz, pero el de tiempo transcurrido no lo es ¿porqué puede ser? \n
+* El gráfico de uso de memoria es lineal con el tamaño de matriz, pero el de tiempo transcurrido no lo es ¿porqué puede ser?  
 Porque es el tamaño en bytes de la matriz, el cual es el mismo si depender de los números en ella.
 
-* ¿Qué versión de python está usando?
+* ¿Qué versión de python está usando?  
 La versión de python usada es Python 3.8.
 
-* ¿Qué versión de numpy está usando?
+* ¿Qué versión de numpy está usando?  
 La versión numpy usada es 1.18.5.
 
 * Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida para confirmar. 
-Como se ve en el siguente gráfico se usan los 4 proceadores de mi computador.
+ Como se ve en el siguente gráfico se usan los 4 proceadores de mi computador.
 
   ![CPUS](CPUS.PNG)
 
