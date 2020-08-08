@@ -52,6 +52,7 @@
 
 
 # Desempeño MATMUL
+![grafico](grafico.png)
 
 (https://raw.githubusercontent.com/jtcastellani/MCOC2020-P0/master/grafico.png)
 
