@@ -76,5 +76,26 @@ La versión numpy usada es 1.18.5.
   ![CPUS](CPUS.PNG)
 
 # Desempeño MIMATMUL
+![grafico2](grafico2.png)
+
+* ¿Como difiere del gráfico del profesor/ayudante?  
+Ambos gráficos son similares ya que se produce un aumento lineal en el tiempo de ejecución.
+
+* ¿A qué se pueden deber las diferencias?  
+Algunas diferencias pueden ser debido a la forma de hacer el código para la multiplicación, ya que uno puede ser más optimizado y limpio que otro.
+
+* El gráfico de uso de memoria es lineal con el tamaño de matriz, pero el de tiempo transcurrido no lo es ¿porqué puede ser?  
+Porque es el tamaño en bytes de la matriz, el cual es el mismo si depender de los números en ella.
+
+* ¿Qué versión de python está usando?  
+La versión de python usada es Python 3.8.
+
+* ¿Qué versión de numpy está usando?  
+La versión numpy usada es 1.18.5.
+
+* Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida para confirmar. 
+ Como se ve en el siguente gráfico se usan los 8 proceadores de mi computador.
+
+  ![MICPUS](MICPUS.PNG)
 
 
