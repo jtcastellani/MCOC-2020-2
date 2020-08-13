@@ -107,3 +107,5 @@ La versión numpy usada es 1.18.5.
 * Los siguentes gráficos muestran el desempeño de las funciones  numpy.linalg.inv , scipy.linalg.inv con overwrite_a=False y scipy.linalg.inv con overwrite_a=True , para los distintos tipos de datos.  
 ![half](half.png)
 ![single](single.png)
+![double](double.png)
+![ldouble](ldouble.png)
