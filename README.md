@@ -108,4 +108,5 @@ La versión numpy usada es 1.18.5.
 ![half](half.png)
 ![single](single.png)
 ![double](double.png)
-![ldouble](ldouble.png)
+![ldouble](ldouble.png)  
+* 
