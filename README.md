@@ -109,6 +109,7 @@ La versión numpy usada es 1.18.5.
 ![single](single.png)
 ![double](double.png)
 ![ldouble](ldouble.png)  
+* No pude lograr correr el caso 1, de Numpy para variables tipo np.half ni np.longdouble. A partir de los gráficos se logra apreciar que la función invertir de Numpy es la que requiere más tiempo de los tres casos. Con respecto a las variables, son los casos de longdouble y double los que requieren más tiempo de ejecución sin ser extremadamente mayores.
 * Qué algoritmo de inversión cree que utiliza cada método (ver wiki)?  
   - Numpy debe invertir por medio de pivoteo o diagonalización de la matriz, ya que es el que demora más en resolverla. Scipy debe descomponer la matriz para realizar los cálculos en menos iteraciones, con el overwrite = True se eliminan valores por lo que se utiliza menos memoria y funciona más rápido. 
 * ¿Como incide el paralelismo y la estructura de caché de su procesador en el desempeño en cada caso? (Ver clase 10 Agosto)  
