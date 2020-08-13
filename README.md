@@ -98,4 +98,9 @@ La versión numpy usada es 1.18.5.
 
   ![MICPUS](MICPUS.PNG)
 
-
+# Desempeño INV
+* Utilizando el comando sys.getsizeof(), se obtubieron los siguentes valores para los tipos de datos  
+ -Half: 26 bytes
+ -Single: 28 bytes
+ -Double: 32 bytes
+ -Longdouble: 32 bytes
