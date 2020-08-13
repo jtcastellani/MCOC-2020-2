@@ -105,4 +105,5 @@ La versión numpy usada es 1.18.5.
   - Double: 32 bytes  
   - Longdouble: 32 bytes  
 * Los siguentes gráficos muestran el desempeño de las funciones  numpy.linalg.inv , scipy.linalg.inv con overwrite_a=False y scipy.linalg.inv con overwrite_a=True , para los distintos tipos de datos.  
-![half](half.PNG)
+![half](half.png)
+![single](single.png)
