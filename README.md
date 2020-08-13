@@ -109,4 +109,8 @@ La versión numpy usada es 1.18.5.
 ![single](single.png)
 ![double](double.png)
 ![ldouble](ldouble.png)  
-* 
+* Qué algoritmo de inversión cree que utiliza cada método (ver wiki)?  
+ - Numpy debe ivertir por medio de pivoteo oy diagonalización de la matriz, ya que es el que demora más en resolverla. Scipy debe descomponer la matriz para realizar los calculos en menos iteraciones, con el overwrite = True se eliminan valores por lo que se uliliza menos memoria y funciona más rápido.  
+ * ¿Como incide el paralelismo y la estructura de caché de su procesador en el desempeño en cada caso? (Ver clase 10 Agosto)  
+  - Se puede notar que a medida que el tipo de dato pesa más bytes, requiere mayor tiempo en su ejecución, lo que hace que se requieran más nucleos del procesador en forma activa para repatir las taréas entre ellos. Probablemente Scipy realiza una reparticón más optimizada que Numpy ya que realiza las tareas en menos tiempo.
+
