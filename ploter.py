@@ -5,115 +5,23 @@ import numpy as np
 plt.figure()
 
 
-plt.subplot(2, 1, 1)
+plt.subplot(3, 1, 1)
 
-#No supe hacer un ciclo para abrir todos los archivos, por lo que lo hize a mano
-i=0 
-archivo = (f"matmul{i}.txt")
-file = "matmul{i}.txt"
+for i in range(9):
+    archivo = (f"halffalse{i}.txt")
+    #file = "mimatmul{i}.txt"
 
-x = np.loadtxt(archivo, usecols=[0])
-y = np.loadtxt(archivo, usecols=[1])
+    x = np.loadtxt(archivo, usecols=[0])
+    y = np.loadtxt(archivo, usecols=[1])
 
-plt.loglog(x, y, 'o-')
-
-i=i+1
-
-archivo = (f"matmul{i}.txt")
-file = "matmul{i}.txt"
-
-x = np.loadtxt(archivo, usecols=[0])
-y = np.loadtxt(archivo, usecols=[1])
-
-plt.loglog(x, y, 'o-')
-
-i=i+1
-
-archivo = (f"matmul{i}.txt")
-file = "matmul{i}.txt"
-
-x = np.loadtxt(archivo, usecols=[0])
-y = np.loadtxt(archivo, usecols=[1])
-
-plt.loglog(x, y, 'o-')
-
-i=i+1
-
-archivo = (f"matmul{i}.txt")
-file = "matmul{i}.txt"
-
-x = np.loadtxt(archivo, usecols=[0])
-y = np.loadtxt(archivo, usecols=[1])
-
-plt.loglog(x, y, 'o-')
-
-i=i+1
-
-archivo = (f"matmul{i}.txt")
-file = "matmul{i}.txt"
-
-x = np.loadtxt(archivo, usecols=[0])
-y = np.loadtxt(archivo, usecols=[1])
-
-plt.loglog(x, y, 'o-')
-
-i=i+1
-
-archivo = (f"matmul{i}.txt")
-file = "matmul{i}.txt"
-
-x = np.loadtxt(archivo, usecols=[0])
-y = np.loadtxt(archivo, usecols=[1])
-
-plt.loglog(x, y, 'o-')
-
-i=i+1
-
-archivo = (f"matmul{i}.txt")
-file = "matmul{i}.txt"
-
-x = np.loadtxt(archivo, usecols=[0])
-y = np.loadtxt(archivo, usecols=[1])
-
-plt.loglog(x, y, 'o-')
-
-i=i+1
-
-archivo = (f"matmul{i}.txt")
-file = "matmul{i}.txt"
-
-x = np.loadtxt(archivo, usecols=[0])
-y = np.loadtxt(archivo, usecols=[1])
-
-plt.loglog(x, y, 'o-')
-
-i=i+1
-
-archivo = (f"matmul{i}.txt")
-file = "matmul{i}.txt"
-
-x = np.loadtxt(archivo, usecols=[0])
-y = np.loadtxt(archivo, usecols=[1])
-
-plt.loglog(x, y, 'o-')
-
-i=i+1
-
-archivo = (f"matmul{i}.txt")
-file = "matmul{i}.txt"
-
-x = np.loadtxt(archivo, usecols=[0])
-y = np.loadtxt(archivo, usecols=[1])
-
-plt.loglog(x, y, 'o-')
-
+    plt.loglog(x, y, 'o-')
 
 
 plt.xlim(0, 20000)
-plt.ylim(0, 600)
+plt.ylim(0, 3600)
 
-yTicks = [0.1/1000, 1/1000, 10/1000, 0.1, 1, 10, 60, 600]
-yTicks_Text = ["0.1 ms", "1 ms", "10 ms", "0.1 s", "1 s", "10 s", "1 min", "10 min"]
+yTicks = [0.1/1000, 1/1000, 10/1000, 0.1, 1, 10, 60, 600, 3600]
+yTicks_Text = ["0.1 ms", "1 ms", "10 ms", "0.1 s", "1 s", "10 s", "1 min", "10 min", "1 hr"]
 
 xTicks = [10, 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000]
 plt.xticks(xTicks)
@@ -124,7 +32,42 @@ frame1 = plt.gca()
 frame1.axes.xaxis.set_ticklabels([])
 
 
-plt.title("Rendimiento A@B\n", fontsize=14)
+plt.title("Rendimiento Scipy False, dtype=half", fontsize=14)
+plt.ylabel("Tiempo transcurrido")
+
+
+plt.grid(axis = 'both')
+
+
+
+plt.subplot(3, 1, 2)
+
+for i in range(9):
+    archivo = (f"halftrue{i}.txt")
+    #file = "mimatmul{i}.txt"
+
+    x = np.loadtxt(archivo, usecols=[0])
+    y = np.loadtxt(archivo, usecols=[1])
+
+    plt.loglog(x, y, 'o-')
+
+
+plt.xlim(0, 20000)
+plt.ylim(0, 3600)
+
+yTicks = [0.1/1000, 1/1000, 10/1000, 0.1, 1, 10, 60, 600, 3600]
+yTicks_Text = ["0.1 ms", "1 ms", "10 ms", "0.1 s", "1 s", "10 s", "1 min", "10 min", "1 hr"]
+
+xTicks = [10, 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000]
+plt.xticks(xTicks)
+
+plt.yticks(yTicks, yTicks_Text)
+
+frame1 = plt.gca()
+frame1.axes.xaxis.set_ticklabels([])
+
+
+plt.title("Rendimiento Scipy True, dtype=half", fontsize=14)
 plt.ylabel("Tiempo transcurrido")
 
 
@@ -134,15 +77,14 @@ plt.grid(axis = 'both')
 
 
 
-
-plt.subplot(2, 1, 2)
-
+plt.subplot(3, 1, 3)
 
 
 
 
-y2 = np.loadtxt('matmul0.txt', usecols=[2])
-x2 = np.loadtxt('matmul0.txt', usecols=[0])
+
+y2 = np.loadtxt('halffalse0.txt', usecols=[2])
+x2 = np.loadtxt('halffalse0.txt', usecols=[0])
 plt.loglog(x2, y2, 'o-')
 
 
@@ -166,11 +108,9 @@ plt.grid(axis = 'both')
 
 plt.plot([0,16*10**9], [18000,16*10**9], 'black', linestyle="--")
 
-import numpy
-print (numpy.version.version)
-
+plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=None, hspace=0.5)
 plt.tight_layout()
-plt.savefig('grafico.png', dpi=300)
+plt.savefig('half.png', dpi=800)
 
 plt.show()
 
