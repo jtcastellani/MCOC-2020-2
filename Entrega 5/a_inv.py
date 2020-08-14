@@ -5,9 +5,7 @@ import scipy.linalg as splalg
 from numpy import float32
 from ploter import ploter 
 
-names = ["A_invB.txt", "A_invBnpSolve.txt"]
 
-ploter(names)
 
 def mlp(N, dtype=float32):                    #obtenida del foro entrega GOLF
     matriz = np.zeros((N,N),dtype=dtype)
@@ -24,7 +22,8 @@ Ns = [
     100, 
     160, 250, 
     350, 500, 1000, 2000,
-    3000, 5000, 8000, 10000]
+    3000, 5000, 8000, 
+    12000,  20000]
 
 
 corridas = 10
@@ -79,7 +78,7 @@ for i in Ns:
         archivos[k].write(f"{i} {tiempos_x[k]}\n")
         archivos[k].flush()
     
-    
+
 names = ["A_invB.txt", "A_invBnpSolve.txt"]
 
 ploter(names)
