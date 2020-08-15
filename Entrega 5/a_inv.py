@@ -6,8 +6,7 @@ from numpy import float32
 from ploter import ploter 
 
 
-
-def mlp(N, dtype=float32):                    #obtenida del foro entrega GOLF
+def mlp(N, dtype=float32):                    #script para crear la matriz laplaciana obtenida del foro entrega GOLF
     matriz = np.zeros((N,N),dtype=dtype)
     np.fill_diagonal(matriz,2)
     for i in range(N):
@@ -16,7 +15,7 @@ def mlp(N, dtype=float32):                    #obtenida del foro entrega GOLF
                 matriz[i][j] = -1
     return(matriz)
 
-Ns = [
+Ns = [                     #tamaño de las matrices
     2, 5, 10,
     20, 40,  60, 
     100, 
@@ -26,21 +25,22 @@ Ns = [
     12000,  20000]
 
 
-corridas = 10
+corridas = 10    #numero de repeteciones
 
-tipos = ["A_invB.txt", "A_invBnpSolve.txt"]
+tipos = ["A_invB.txt", "A_invBnpSolve.txt"]       #se crean un txt por tipo de solucion y luego se escriben
 archivos = [open(tipo, 'w') for tipo in tipos]
 
-for i in Ns:
+for i in Ns:   #ciclo for para recorrer los distintos tamaños de matrices
     
-    tiempos = np.zeros((corridas, len(archivos)))
+    tiempos = np.zeros((corridas, len(archivos)))   #matriz de tiempos de cada corrida en las filas y una columna por tipo de solucion
     print(f"i = {i}") 
     
     
-    for e in range(corridas):
+    for e in range(corridas):     #ciclo for para recorrer las corridas
 
         print(f"e = {e}")    
     
+    #inversion de la matriz A para luego multiplicarla por B
         A = mlp(i)
         B = np.ones(i)
 
@@ -54,7 +54,7 @@ for i in Ns:
         t= t2 - t1
         tiempos[e][0] = t
         
-        
+    #solucion por medio de numpy    
         A = mlp(i)
         B = np.ones(i)
 
@@ -70,16 +70,16 @@ for i in Ns:
     print("tiempos: ", tiempos)
     
     
-    tiempos_x = [np.mean(tiempos[:,j]) for j in range(len(archivos))]
+    tiempos_x = [np.mean(tiempos[:,j]) for j in range(len(archivos))]  #se registran los tiempos promedios para cada caso
 
     print("tiempos promedios: ", tiempos_x)    
         
-    for k in range(len(archivos)):
+    for k in range(len(archivos)):      #registra el N de la matriz junto a su tiempo promedio
         archivos[k].write(f"{i} {tiempos_x[k]}\n")
         archivos[k].flush()
     
 
-names = ["A_invB.txt", "A_invBnpSolve.txt"]
+names = ["A_invB.txt", "A_invBnpSolve.txt"]   #se declarn los tipos de archivos para luego graficarlos
 
 ploter(names)
 

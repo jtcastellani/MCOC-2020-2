@@ -35,6 +35,7 @@ def ploter(nombres):
         
     plt.tight_layout()
     plt.legend()
+    plt.savefig("entrega_5.png", dpi = 300)
     plt.show()
-    plt.savefig("entrega5.png", dpi = 300)
+
 
