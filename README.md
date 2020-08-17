@@ -116,4 +116,4 @@ La versión numpy usada es 1.18.5.
   - Se puede notar que a medida que el tipo de dato pesa más bytes, requiere mayor tiempo en su ejecución, lo que hace que se requieran más núcleos del procesador en forma activa para repartir las taréas entre ellos. Probablemente Scipy realiza una repartición más optimizada que Numpy ya que realiza las tareas en menos tiempo.
 
 # Entrega6 - Desempeño de Ax = b (Parte 2)  
-!![entrega_6](entrega_6.png)  
+![entrega_6](entrega_6.png)  
