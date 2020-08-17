@@ -115,3 +115,5 @@ La versión numpy usada es 1.18.5.
 * ¿Como incide el paralelismo y la estructura de caché de su procesador en el desempeño en cada caso? (Ver clase 10 Agosto)  
   - Se puede notar que a medida que el tipo de dato pesa más bytes, requiere mayor tiempo en su ejecución, lo que hace que se requieran más núcleos del procesador en forma activa para repartir las taréas entre ellos. Probablemente Scipy realiza una repartición más optimizada que Numpy ya que realiza las tareas en menos tiempo.
 
+# Entrega6 - Desempeño de Ax = b (Parte 2)  
+!![entrega_6](entrega_6.png)  
