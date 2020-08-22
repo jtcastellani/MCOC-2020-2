@@ -122,6 +122,17 @@ La versión numpy usada es 1.18.5.
   
 # Matrices dispersas y complejidad computacional  
 
+* Comente las diferencias que ve en el comportamiento de los algoritmos en el caso de matrices llenas y dispersas.  
+
+* ¿Cual parece la complejidad asintótica (para LaTeX: N\rightarrow\inftyN → ∞)  para el ensamblado y solución en ambos casos y porqué?  
+
+* ¿Como afecta el tamaño de las matrices al comportamiento aparente?  
+
+* ¿Qué tan estables son las corridas (se parecen todas entre si siempre, nunca, en un rango)?  
+
+
+
+* Código de ensamblaje: 
 ```python
 def mlp(N, dtype=double):                
     matriz = np.zeros((N,N),dtype=dtype)
