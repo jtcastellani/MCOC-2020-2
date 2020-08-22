@@ -142,12 +142,16 @@ La versión numpy usada es 1.18.5.
 
 
 * Comente las diferencias que ve en el comportamiento de los algoritmos en el caso de matrices llenas y dispersas.  
+Para el caso Disperso se toma menos tiempo en ecnntrar la solucion que en el caso Laplaciano
 
 * ¿Cual parece la complejidad asintótica (para LaTeX: N\rightarrow\inftyN → ∞)  para el ensamblado y solución en ambos casos y porqué?  
+En todas parece ser N -> 2, ya que se asemeja a esa curva en su pendiente
 
 * ¿Como afecta el tamaño de las matrices al comportamiento aparente?  
+Aumenta los tiempos de ensamble pero no en todos los casos aumenta los tiempos de solución.
 
 * ¿Qué tan estables son las corridas (se parecen todas entre si siempre, nunca, en un rango)?  
+A pesar de que no son siempre exactamente iguales, la diferencia en términos de segundos es mínima, la mayor diferencia no supera los 5 segundos.
 
 
 
@@ -162,5 +166,6 @@ def mlp(N, dtype=double):
                 matriz[i][j] = -1
     return(matriz)
 ```  
+ - Quizas no resulta ser el mejor código de ensamble ya que requiere dos ciclos for y por eso en algunos casos toma mucho tiempo, en especial para matrices grandes.
 
 
