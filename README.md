@@ -124,7 +124,7 @@ La versión numpy usada es 1.18.5.
 
 * Caso MATMUL
   - Laplaciano  
-  ![MatmulLp](MatmulLp.png)  
+  ![MatmulLp](MatmulLP.png)  
   - Disperso
   ![MatmulD](MatmulD.png)  
   
@@ -140,7 +140,6 @@ La versión numpy usada es 1.18.5.
   - Disperso
   ![SolveD](SolveD.png)
 
-*
 
 * Comente las diferencias que ve en el comportamiento de los algoritmos en el caso de matrices llenas y dispersas.  
 
