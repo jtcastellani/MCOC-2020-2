@@ -122,7 +122,7 @@ La versión numpy usada es 1.18.5.
   
 # Matrices dispersas y complejidad computacional  
 
-'''python
+```python
 def mlp(N, dtype=double):                
     matriz = np.zeros((N,N),dtype=dtype)
     np.fill_diagonal(matriz,2)
@@ -131,5 +131,5 @@ def mlp(N, dtype=double):
             if i+1 == j or i-1 == j:
                 matriz[i][j] = -1
     return(matriz)
-    '''
+```
 
