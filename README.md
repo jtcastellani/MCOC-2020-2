@@ -117,4 +117,19 @@ La versión numpy usada es 1.18.5.
 
 # Entrega6 - Desempeño de Ax = b (Parte 2)  
 ![entrega_6](entrega_6.png)  
-* A partir del gráfico se puede ver que el tiempo de ejecución aumenta a medida que aumenta el tamaño de las matrices, junto con esto el método que demora más es el que primero se invierte la matriz para luego multiplicarla por B. Para matrices pequeñas, menores a 20x20 se puede ver que el Solver de Scipy es el más lento, luego para matrices sobre los 350x350 es el que demora menos tiempo. Para matrices menores a 100x100 es el Solver de Numpy el que requiere menos tiempo. Para el resto de las configuraciones del Solver de Scipy no se nota una gran diferencia entre ellos.
+* A partir del gráfico se puede ver que el tiempo de ejecución aumenta a medida que aumenta el tamaño de las matrices, junto con esto el método que demora más es el que primero se invierte la matriz para luego multiplicarla por B. Para matrices pequeñas, menores a 20x20 se puede ver que el Solver de Scipy es el más lento, luego para matrices sobre los 350x350 es el que demora menos tiempo. Para matrices menores a 100x100 es el Solver de Numpy el que requiere menos tiempo. Para el resto de las configuraciones del Solver de Scipy no se nota una gran diferencia entre ellos.  
+  
+  
+# Matrices dispersas y complejidad computacional  
+
+'''python
+def mlp(N, dtype=double):                
+    matriz = np.zeros((N,N),dtype=dtype)
+    np.fill_diagonal(matriz,2)
+    for i in range(N):
+        for j in range(N):
+            if i+1 == j or i-1 == j:
+                matriz[i][j] = -1
+    return(matriz)
+    '''
+
