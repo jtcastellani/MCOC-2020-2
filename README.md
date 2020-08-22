@@ -122,6 +122,26 @@ La versión numpy usada es 1.18.5.
   
 # Matrices dispersas y complejidad computacional  
 
+* Caso MATMUL
+  - Laplaciano  
+  ![MatmulLp](MatmulLp.png)  
+  - Disperso
+  ![MatmulD](MatmulD.png)  
+  
+ * Caso INV
+  - Laplaciano  
+  ![InvLp](InvLp.png)  
+  - Disperso
+  ![InvD](InvD.png)  
+  
+ * Caso SOLVE
+  - Laplaciano  
+  ![SolveLp](SolveLp.png)  
+  - Disperso
+  ![SolveD](SolveD.png)
+
+*
+
 * Comente las diferencias que ve en el comportamiento de los algoritmos en el caso de matrices llenas y dispersas.  
 
 * ¿Cual parece la complejidad asintótica (para LaTeX: N\rightarrow\inftyN → ∞)  para el ensamblado y solución en ambos casos y porqué?  
@@ -142,5 +162,6 @@ def mlp(N, dtype=double):
             if i+1 == j or i-1 == j:
                 matriz[i][j] = -1
     return(matriz)
-```
+```  
+
 
